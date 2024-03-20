@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { QueryClientWrapper}  from './QueryClientWrapper.tsx';
 
+// gets all elements with id of root and adds it to root object
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// renders the root
 root.render(
   <React.StrictMode>
-    <App />
+    <App /><QueryClientWrapper />
   </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
